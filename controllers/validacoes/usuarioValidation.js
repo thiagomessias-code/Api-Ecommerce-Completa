@@ -31,6 +31,7 @@ const UsuarioValidation = {
     }
 };
 //ok
+//ok
 
 module.exports = {
     UsuarioValidation
