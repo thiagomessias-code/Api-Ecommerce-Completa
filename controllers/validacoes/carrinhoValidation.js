@@ -37,6 +37,7 @@ const getLojaValue = async (carrinho) =>{
 const CarrinhoValidation = async (carrinho)=>{
     const {precoTotal: precoTotalCarrinho, quantidade: quantidadeTotalCarrinho} = getCarrinhoValue(carrinho);
     const {precoTotal: precoTotalLoja, quantidade: quantidadeTotalLoja} = await getLojaValue(carrinho);
+    console.log(carrinho)
     // console.log(precoTotalCarrinho, quantidadeTotalCarrinho, precoTotalLoja, quantidadeTotalLoja);
     return precoTotalCarrinho === precoTotalLoja && quantidadeTotalCarrinho === quantidadeTotalLoja;
 };
